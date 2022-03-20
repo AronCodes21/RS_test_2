@@ -31,11 +31,11 @@ const changeTheme = () => {
   const darkButton = document.getElementById("dark");
   const body = document.body;
 
-  const theme = localStorage.getItem("theme");
+  // const theme = localStorage.getItem("theme");
 
-  if (theme) {
-    body.classList.add(theme);
-  }
+  // if (theme) {
+  //   body.classList.add(theme);
+  // }
 
   darkButton.onclick = () => {
     body.classList.replace("light", "dark");
