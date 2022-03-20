@@ -12,10 +12,18 @@ const navSlide = () => {
 const themeSlide = () => {
   const themeBtn = document.querySelector(".themeBtn");
   const themefy = document.querySelector(".themefy");
+  const lightBtn = document.querySelector(".light-item");
+  const darkBtn = document.querySelector(".dark-item");
 
   themefy.addEventListener("click", () => {
     themeBtn.classList.toggle("has-dropdown");
   });
+  lightBtn.onclick = () => {
+    themeBtn.classList.toggle("has-dropdown");
+  };
+  darkBtn.onclick = () => {
+    themeBtn.classList.toggle("has-dropdown");
+  };
 };
 
 const changeTheme = () => {

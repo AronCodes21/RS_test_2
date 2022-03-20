@@ -43,6 +43,7 @@ $hover: rgb(65, 154, 255);
 body {
   background: var(--bg);
   transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  overflow: hidden;
 }
 // Navbar
 nav {
@@ -108,10 +109,11 @@ nav {
     margin-top: 1rem;
     padding: 0.5rem;
 
-    transform: translateX(-55%);
+    transform: translateX(200%);
     transition: opacity 150ms ease-in-out;
   }
   .has-dropdown .dropdown {
+    transform: translateX(-55%);
     opacity: 1;
   }
 }
@@ -146,9 +148,6 @@ nav {
       opacity: 0;
       transition: opacity 1000ms ease-in-out;
     }
-    .themeBtn {
-      display: none;
-    }
 
     // Small screen show burger menu
     .burger {
@@ -164,6 +163,9 @@ nav {
     }
     .burger:hover div {
       background: $hover;
+    }
+    .has-dropdown .dropdown {
+      transform: translateX(-25%);
     }
 
     // Small Screen Slider Anim

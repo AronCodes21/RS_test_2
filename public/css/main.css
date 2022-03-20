@@ -32,6 +32,7 @@
 body {
   background: var(--bg);
   transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  overflow: hidden;
 }
 
 nav {
@@ -85,10 +86,11 @@ nav .dropdown {
   justify-content: space-evenly;
   margin-top: 1rem;
   padding: 0.5rem;
-  transform: translateX(-55%);
+  transform: translateX(200%);
   transition: opacity 150ms ease-in-out;
 }
 nav .has-dropdown .dropdown {
+  transform: translateX(-55%);
   opacity: 1;
 }
 
@@ -116,9 +118,6 @@ nav .has-dropdown .dropdown {
     opacity: 0;
     transition: opacity 1000ms ease-in-out;
   }
-  nav .themeBtn {
-    display: none;
-  }
   nav .burger {
     display: block;
     cursor: pointer;
@@ -132,6 +131,9 @@ nav .has-dropdown .dropdown {
   }
   nav .burger:hover div {
     background: #419aff;
+  }
+  nav .has-dropdown .dropdown {
+    transform: translateX(-25%);
   }
   nav .navlinks-active {
     transform: translateY(0%);
