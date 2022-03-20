@@ -4,7 +4,6 @@ const navSlide = () => {
 
   burger.addEventListener("click", () => {
     navLinks.classList.toggle("navlinks-active");
-
     burger.classList.toggle("toggle");
   });
 };
@@ -29,6 +28,7 @@ const themeSlide = () => {
 const changeTheme = () => {
   const lightButton = document.getElementById("light");
   const darkButton = document.getElementById("dark");
+
   const body = document.body;
 
   // const theme = localStorage.getItem("theme");
